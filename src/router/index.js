@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home', 
+    name: 'Home',  // 선택 사항, 이름을 통해서도 라우팅 가능
     component: Home // path 이동 시 어떤 View를 보여줄 것인지
   }, // 하나의 경로에 하나의 객체
   {
