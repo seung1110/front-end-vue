@@ -9,7 +9,6 @@
         <router-link v-bind:to="`/menu01/exam02view`" class="btn btn-sm btn-info">/menu01/exam02view</router-link><hr/>
         <router-link :to="{path:'/menu01/exam02view'}" class="btn btn-sm btn-info">/menu01/exam02view</router-link><hr/>
         <router-link :to="{name:'menu01_exam02view'}" class="btn btn-sm btn-info">/menu01/exam02view</router-link>
-
     </div>
   </div>
 </template>

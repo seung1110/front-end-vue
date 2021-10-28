@@ -11,6 +11,12 @@
       <router-link to="/menu01/exam02view" class="nav-link text-warning">프로그래밍 방식 화면 이동</router-link>
       <router-link to="/menu01/exam03view" class="nav-link text-warning">중첩 라우팅</router-link>
       <router-link to="/menu01/exam04view" class="nav-link text-warning">이름이 있는 뷰</router-link>
+      <router-link to="/menu01/exam05view" class="nav-link text-warning">URL 데이터 전달</router-link>
+    </li>
+     <li class="nav-item">
+      <h6 class="text-white">Menu02 : Component</h6>
+      <router-link to="/menu02/exam01expressions" class="nav-link text-warning">표현식 바인딩</router-link>
+      <router-link to="/menu02/exam02directives" class="nav-link text-warning">Directives</router-link>
     </li>
   </ul>
 </template>

@@ -57,6 +57,37 @@ const routes = [
         }
       }
     ]
+  },
+  {
+    path:"/menu01/exam05view",
+    component: () => import(/* webpackChunkName: "menu01" */'../views/menu01/Exam05View'),
+  },
+  {
+    path:"/menu01/exam06view/:bno", // pathvariable 설정
+    name:"menu01_exam06view",
+    component: () => import(/* webpackChunkName: "menu01" */'../views/menu01/Exam06View'),
+    props:true // bno의 값을 해당 componenet의 (같은 이름으로 설정된)prop에 할당
+  }, 
+  {
+    path:"/menu01/exam07view",
+    name:"menu01_exam07view",
+    component: () => import(/* webpackChunkName: "menu01" */'../views/menu01/Exam07View'),
+    props:{kind:"freeboard", color:"blue"} // 정적으로 변수 할당
+  },
+  {
+    path:"/menu01/exam08view",
+    name:"menu01_exam08view",
+    component: () => import(/* webpackChunkName: "menu01" */'../views/menu01/Exam08View'),
+    props: (route)=>({
+      kind : route.query.kind,
+      color : route.query.color
+    })
+  },{
+    path:"/menu02/exam01expressions",
+    component : ()=> import(/* webpackChunkName: "menu01" */'../views/menu02/Exam01Expressions'),
+  },{
+    path:"/menu02/exam02directives",
+    component : () => import(/* webpackChunkName: "menu01" */'../views/menu02/Exam02Directives')
   }
 ]
 
