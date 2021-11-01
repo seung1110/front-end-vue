@@ -20,7 +20,7 @@
 export default {
   name: "Exam01Expressions",
   components: {},
-  data: () => ({
+  data: () => ({ 
     no: 1,
     name: "미니백",
     company: "클레인",
