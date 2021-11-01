@@ -31,8 +31,15 @@
     <li class="nav-item">
       <h6 class="text-white">Menu04 : Data Delivery</h6>
       <router-link to="/menu04/exam01props" class="nav-link text-warning">부모에서 자식으로 전달(props 활용)</router-link>
+      <router-link to="/menu04/exam02eventemit" class="nav-link text-warning">자식에서 부모로 전달(event 활용)</router-link>
+      <router-link to="/menu04/exam03inject" class="nav-link text-warning">Inject</router-link>
+      <router-link to="/menu04/exam04ref" class="nav-link text-warning">Ref</router-link>
     </li>
-    
+      <li class="nav-item">
+      <h6 class="text-white">Menu05 : LifeCycleHook</h6>
+      <router-link to="/menu05/exam01lifecyclehook" class="nav-link text-warning">LifeCycle hook</router-link>
+
+    </li>
   </ul>
 </template>
 
