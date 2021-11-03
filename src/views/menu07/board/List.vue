@@ -69,7 +69,7 @@ export default {
   methods: {
     changePageNo(pageNo){
       this.$router.push(`/menu07/board/list?pageNo=${pageNo}`).catch(()=>{});
-      this.getBoardList(pageNo);
+      //watch 작동
     },
     getBoardList(pageNo) {
       this.loading = true;
@@ -105,7 +105,11 @@ export default {
   },
   watch:{
     $route(to, from){
-      this.getBoardList(to.query.pageNo);
+      if(to.query.pageNo){
+        this.getBoardList(to.query.pageNo);
+        }else{
+        this.getBoardList(1);
+      }
     }
   }
   
