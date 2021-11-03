@@ -3,13 +3,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+  
+// axios 설정 파일 추가, app.vue 실행 시 바로 네트워크 통신이 가능하도록
+import axiosConfig from "./apis/axiosConfig"
 
 Vue.config.productionTip = false  // 개발 중 나타는 hint 기능 막기
 
 new Vue({
   // Vue 객체 생성
   router,
-
   store,
 
   // 비동기

@@ -29,5 +29,8 @@ import AppMenu from "@/components/AppMenu.vue";
 export default {
   name: "App",
   components: { AppHeader, AppMenu },
+  created(){
+    this.$store.dispatch("loadAuth");
+  }
 };
 </script>

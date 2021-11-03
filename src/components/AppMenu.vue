@@ -35,10 +35,19 @@
       <router-link to="/menu04/exam03inject" class="nav-link text-warning">Inject</router-link>
       <router-link to="/menu04/exam04ref" class="nav-link text-warning">Ref</router-link>
     </li>
-      <li class="nav-item">
+    <li class="nav-item">
       <h6 class="text-white">Menu05 : LifeCycleHook</h6>
       <router-link to="/menu05/exam01lifecyclehook" class="nav-link text-warning">LifeCycle hook</router-link>
-
+    </li>
+    <li class="nav-item">
+      <h6 class="text-white">Menu06 : Vuex State Management </h6>
+      <router-link to="/menu06/exam01rootstate" class="nav-link text-warning">Root State read&update</router-link>
+      <router-link to="/menu06/exam02counterstate" class="nav-link text-warning">Counter State read&update</router-link>
+    </li>
+    <li class="nav-item">
+      <h6 class="text-white">Menu07 : Axios Ajax </h6>
+      <router-link to="/menu07/exam01asynccontrol" class="nav-link text-warning">비동기 작업 중 보여줄 스피너</router-link>
+      <router-link to="/menu07/auth/jwtauth" class="nav-link text-warning">jwt 인증</router-link>
     </li>
   </ul>
 </template>
